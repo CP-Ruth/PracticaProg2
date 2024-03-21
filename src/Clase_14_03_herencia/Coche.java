@@ -28,4 +28,10 @@ public class Coche extends Vehiculo {
     public void setCilindrada(int cilindrada) {
         this.cilindrada = cilindrada;
     }
+
+    @Override
+    public void info() {
+        super.info();
+        System.out.println("Velocidad: "+velocidad+" Cilindrada: "+cilindrada);
+    }
 }

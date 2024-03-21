@@ -16,4 +16,13 @@ public class Camioneta  extends Coche{
     public void setCarga(int carga) {
         this.carga = carga;
     }
+
+    //Metodos
+
+
+    @Override
+    public void info() {
+        super.info();
+        System.out.println("Carga: "+carga);
+    }
 }

@@ -19,4 +19,10 @@ public class Bicicleta extends Vehiculo {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+    @Override
+    public void info() {
+        super.info();
+        System.out.println("Tipo: "+tipo);
+    }
 }

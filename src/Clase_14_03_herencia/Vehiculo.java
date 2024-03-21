@@ -28,4 +28,8 @@ public class Vehiculo {
         this.ruedas = ruedas;
     }
 
+    public void info(){
+        System.out.println("Color: "+ color+" Ruedas: "+ruedas);
+    }
+
 }

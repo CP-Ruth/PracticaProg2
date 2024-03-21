@@ -5,7 +5,7 @@ public class Motocicleta  extends Bicicleta{
     private int cilindrada;
 
     //Constructor
-    public Motocicleta(String color, int ruedas, String tipo, int velocidad, int cilindrada) {
+    public Motocicleta(String color, int ruedas, String tipo) {
         super(color, ruedas, tipo);
         this.velocidad = velocidad;
         this.cilindrada = cilindrada;
@@ -27,5 +27,11 @@ public class Motocicleta  extends Bicicleta{
 
     public void setCilindrada(int cilindrada) {
         this.cilindrada = cilindrada;
+    }
+
+    @Override
+    public void info() {
+        super.info();
+        System.out.println("Velocidad: "+velocidad+" Cilindrada: "+cilindrada);
     }
 }
