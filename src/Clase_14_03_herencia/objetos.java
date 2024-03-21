@@ -4,10 +4,10 @@ public class objetos {
     public static void main(String[] args) {
         ArrayList<Vehiculo> vehiculos = new ArrayList<>();
 
-        Coche coche = new Coche("Rojo", 2, 15, 45);
+        Coche coche = new Coche("Rojo", 4, 15, 45);
         Motocicleta moto = new Motocicleta("Azul", 2, "Deportiva");
-        Bicicleta bicicleta = new Bicicleta("Verde", 2, "");
-        Camioneta camioneta= new Camioneta("Purpura",4,50);
+        Bicicleta bicicleta = new Bicicleta("Verde", 2, "Deportivo");
+        Camioneta camioneta= new Camioneta("Morado",4, 10, 25,45);
 
         vehiculos.add(coche);
         vehiculos.add(moto);
@@ -15,6 +15,9 @@ public class objetos {
         vehiculos.add(camioneta);
 
         catalogar(vehiculos);
+        catalogar(vehiculos, 0);
+        catalogar(vehiculos, 2);
+        catalogar(vehiculos, 4);
 
     }
     public static void catalogar(ArrayList<Vehiculo> vehiculos) {
@@ -25,5 +28,19 @@ public class objetos {
         }
     }
 
+    public static void catalogar(ArrayList<Vehiculo> vehiculos,int ruedas){
+        int count = 0;
+        for (Vehiculo vehiculo : vehiculos) {
+            if (vehiculo.getRuedas() == ruedas){
+                count++;
+
+            }
+        }
+        if (count>0){
+            System.out.println("Se han encontrado "+ count + " vehículos con "+ ruedas+" ruedas:");
+        }else {
+            System.out.println("No se encontraron vehículos con " + ruedas + " ruedas.");
+        }
+    }
 
 }
