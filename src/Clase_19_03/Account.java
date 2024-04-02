@@ -8,11 +8,13 @@ public abstract class Account {
     protected float annualRate;
     protected float monthlyCommission = 0;
 
+        //Constructor
     public Account(float balance, float annualRate) {
         this.balance = balance;
         this.annualRate = annualRate;
     }
 
+    //Metodos
     public void consign(float amount){
         balance += amount;
         numberConsignments++;
