@@ -12,5 +12,12 @@ public class Novela extends Libro{
         this.genero = genero;
     }
 
+        //Getter and setter
+    public String getGenero() {
+        return genero;
+    }
 
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
 }

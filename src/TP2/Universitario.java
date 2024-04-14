@@ -15,4 +15,13 @@ public class Universitario extends Libro {
         super(titulo, autor, añoDePublicacion, prestado);
         this.carrera = carrera;
     }
+
+        //Getter and Setter
+    public String getCarrera() {
+        return carrera;
+    }
+
+    public void setCarrera(String carrera) {
+        this.carrera = carrera;
+    }
 }

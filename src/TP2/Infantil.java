@@ -11,4 +11,13 @@ public class Infantil extends Libro{
         super(titulo, autor, añoDePublicacion, prestado);
         this.edadRecomendada = edadRecomendada;
     }
+
+        //Getter ans Setter
+    public int getEdadRecomendada() {
+        return edadRecomendada;
+    }
+    public void setEdadRecomendada(int edadRecomendada) {
+        this.edadRecomendada = edadRecomendada;
+    }
+
 }

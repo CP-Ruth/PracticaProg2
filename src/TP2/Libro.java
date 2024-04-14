@@ -52,12 +52,22 @@ public class Libro implements Prestable {
 
         //Method
     @Override
-    public boolean prestar() {
-        return false;
+    public void prestar() {
+        if(prestado){
+            System.out.println(titulo+" ya está prestado.");
+        }else{
+            System.out.println(titulo+" ha sido prestado.");
+            prestado=true;
+        }
     }
 
     @Override
-    public boolean devolver() {
-        return false;
+    public void devolver() {
+        if (prestado) { //Si el libro estaba prestado entonces
+            prestado = false; //Cambia a false porque lo devolvio, ya no está prestado
+            System.out.println("El libro ha sido devuelto");
+        } else { // si el libro no estaba prestado... ¿Qué está devolviendo?
+            System.out.println("No estaba prestado ese libro.");
+        }
     }
 }
