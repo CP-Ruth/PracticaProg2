@@ -4,11 +4,11 @@ public class Novela extends Libro{
     private String genero;
 
         //Constructor
-    public Novela(String genero) {
-        this.genero = genero;
+    public Novela(){
     }
-    public Novela(String titulo, String autor, int añoDePublicacion, boolean prestado, String genero) {
-        super(titulo, autor, añoDePublicacion, prestado);
+
+    public Novela(String titulo, String autor, int anioDePublicacion, boolean prestado, String genero) {
+        super(titulo, autor, anioDePublicacion, prestado);
         this.genero = genero;
     }
 

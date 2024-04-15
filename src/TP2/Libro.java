@@ -3,7 +3,7 @@ package TP2;
 public class Libro implements Prestable {
     private String titulo;
     private String autor;
-    private int añoDePublicacion;
+    private int anioDePublicacion;
     private boolean prestado;
 
     //Cinstructor
@@ -13,7 +13,7 @@ public class Libro implements Prestable {
     public Libro(String titulo, String autor, int añoDePublicacion, boolean prestado) {
         this.titulo = titulo;
         this.autor = autor;
-        this.añoDePublicacion = añoDePublicacion;
+        this.anioDePublicacion = añoDePublicacion;
         this.prestado = prestado;
     }
 
@@ -35,11 +35,11 @@ public class Libro implements Prestable {
     }
 
     public int getAñoDePublicacion() {
-        return añoDePublicacion;
+        return anioDePublicacion;
     }
 
     public void setAñoDePublicacion(int añoDePublicacion) {
-        this.añoDePublicacion = añoDePublicacion;
+        this.anioDePublicacion = añoDePublicacion;
     }
 
     public boolean isPrestado() {
