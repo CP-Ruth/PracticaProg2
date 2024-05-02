@@ -36,25 +36,30 @@ public class Main {
         Test cycling = new Test(103, "Ciclismo");
 
         //Atletas en cada prueba/Juego
-        //Primera prueba
+        //Primera prueba code101
         swimming.add(a6);
         swimming.add(a3);
-        //Segunda prueba
+        //Segunda prueba code102
         archery.add(a5);
         archery.add(a2);
         archery.add(a7);
-        //Tercera prueba
+        //Tercera prueba code103
         cycling.add(a1);
         cycling.add(a4);
-
-        //Sedes de los juegos
-        Headquarters korea = new Headquarters(1,"25/05/2024","8");
 
         //Instalaciones
         Facilities f1 = new Facilities("Espacio deportivo","Seul","SeulSeul","2");
         Facilities f2 = new Facilities("Complejo deportivo","Sejong","SejongSejong","1");
 
+        //Sede de los juegos
+        Headquarters first = new Headquarters(1,"25/05/2024","8",swimming,f1);
+        Headquarters second = new Headquarters(1,"25/05/2024", "15", archery,f2);
+        Headquarters third = new Headquarters(1,"2/05/2024", "8", cycling,f2);
 
+
+        //Desde Instalacion: Nombre del 3er atleta de la 2da prueba.
+        //Sede de la prueba, numero del atleta
+        f1.showTestAthle(second,3);
     }
 
 }

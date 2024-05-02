@@ -45,4 +45,17 @@ public class Test {
         athletesTest.add(athl);
     }
 
+    public void show(){
+        System.out.println("Los atletas que participan de la prueba de "+title );
+
+        for(Athlete athe : athletesTest){
+            System.out.println(athe.getName());
+        }
+    }
+
+    public void showAthle(int num){
+        if(athletesTest.size()>=num){
+            System.out.println("El atleta n° "+num+" es "+athletesTest.get(num-1));
+        }
+    }
 }

@@ -57,7 +57,10 @@ public class Facilities {
     }
 
     //Methods
-    public void showTestAthle(){
-        System.out.println(sedeFac.getToDo());
+    public void showTestAthle(Headquarters sede,int num){
+        if (sede.getToDo().getAthletesTest().size()>=num){
+            System.out.println("El atleta que participa de la prueba de "+sede.getToDo().getTitle()+" (codigo de la prueba: "+sede.getToDo().getCode()+") es "+sede.getToDo().getAthletesTest().get(num-1).getName());
+        }
+
     }
 }

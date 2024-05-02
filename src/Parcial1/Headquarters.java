@@ -1,30 +1,41 @@
 package Parcial1;
 
-import java.util.ArrayList;
-
 public class Headquarters {
     private int phase;
     private String date;
     private String time;
-    private ArrayList<Test> toDo;
-    private ArrayList<Facilities> where;
+    private Test toDo;
+    private Facilities where;
+
 
     //Constructor
-    public Headquarters(int phase, String date, String time) {
+
+
+    public Headquarters(int phase, String date, String time, Test toDo, Facilities where) {
         this.phase = phase;
         this.date = date;
         this.time = time;
-        this.toDo = new ArrayList<>();
-        this.where = new ArrayList<>();
+        this.toDo = toDo;
+        this.where = where;
     }
 
     //Getter and Setter
+
+
     public int getPhase() {
         return phase;
     }
 
     public void setPhase(int phase) {
         this.phase = phase;
+    }
+
+    public Facilities getWhere() {
+        return where;
+    }
+
+    public void setWhere(Facilities where) {
+        this.where = where;
     }
 
     public String getDate() {
@@ -43,21 +54,11 @@ public class Headquarters {
         this.time = time;
     }
 
-    public ArrayList<Test> getToDo() {
+    public Test getToDo() {
         return toDo;
     }
 
-    public void setToDo(ArrayList<Test> toDo) {
+    public void setToDo(Test toDo) {
         this.toDo = toDo;
     }
-
-    public ArrayList<Facilities> getWhere() {
-        return where;
-    }
-
-    public void setWhere(ArrayList<Facilities> where) {
-        this.where = where;
-    }
-
-
 }
